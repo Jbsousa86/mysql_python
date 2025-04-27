@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <style>
+        body {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          min-height: 100vh;
+          margin: 0;
+          font-family: Arial, Helvetica, sans-serif;
+          background-color: #fff;
+        }
+      
+        h1 {
+          text-align: center;
+          color: #3366cc;
+          margin-bottom: 30px;
+        }
+      
+        form {
+          background-color: #522cba;
+          padding: 50px;
+          border-radius: 10px;
+          box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+          min-width: 320px;
+          max-width: 600px;
+          display: flex;
+          flex-direction: column;
+          gap: 14px;
+        }
+      
+        label {
+          font-weight: bold;
+          color: #fff;
+          margin-bottom: 5px;
+        }
+      
+        input {
+          padding: 15px;
+          border: none;
+          border-radius: 5px;
+          width: 100%;
+          font-size: 1rem;
+        }
+      
+      </style>    
+</head>
+<body>
+    <h1>Cadastro de alunos</h1>
+    <form action="/alunos" method="post">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required>
+        <label for="email">Email</label>
+        <input type="email" id="nome" name="email" required>
+        <label for="matricula">Matricula</label>
+        <input type="text" id="nome" name="matricula" required>
+        <label for="senha">Senha</label>
+        <input type="password" id="nome" name="senha" required>
+
+       <input type="submit" value="cadastrar">
+         
+    </form>   
+</body>
+</html>
