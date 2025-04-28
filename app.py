@@ -30,9 +30,9 @@ def cadastrar_aluno():
         valores = (nome, email, matricula, senha_hash)
         cursor.execute(sql, valores)
         conexao.commit()
-
         cursor.close()
         conexao.close()
+
 
         return jsonify({'mensagem': 'Aluno cadastrado com sucesso!'}), 201
 
